@@ -1,0 +1,5 @@
+DJI Matrice M30T
+15000
+23
+multirotor
+114

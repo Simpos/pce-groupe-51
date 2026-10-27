@@ -1,0 +1,5 @@
+DJI Matrice 4D
+30000
+21
+multirotor
+104

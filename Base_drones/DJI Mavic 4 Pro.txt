@@ -1,0 +1,5 @@
+DJI Mavic 4 Pro
+30000
+25
+multirotor
+124

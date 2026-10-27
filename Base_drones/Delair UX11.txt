@@ -1,0 +1,5 @@
+Delair UX11
+25000
+null
+fixed_wing
+null

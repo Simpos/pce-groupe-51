@@ -1,0 +1,5 @@
+DJI Matrice 4E
+25000
+21
+multirotor
+104

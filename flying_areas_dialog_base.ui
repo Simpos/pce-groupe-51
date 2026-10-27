@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlyingAreasDialogBase</class>
+ <widget class="QDockWidget" name="FlyingAreasDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Zones de vol</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayoutPrincipal">
+     <item>
+      <widget class="QGroupBox" name="groupDrone">
+       <property name="title">
+        <string>Drone</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayoutDrone">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayoutChoixDrone">
+          <item>
+           <widget class="QComboBox" name="ChoixDrone">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="AjoutDrone">
+            <property name="text">
+             <string>Ajouter un drone</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+ <!--  TODO: Modifier la zone de text du nom pour pouvoir modifier 'à la voller'-->
+         <layout class="QFormLayout" name="formLayoutDonneesDrone">
+          <item row="0" column="0">
+           <widget class="QLabel" name="DroneNomTexte">
+            <property name="text">
+             <string>Nom :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="DroneNom">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="DroneTypeTexte">
+            <property name="text">
+             <string>Type :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="DroneType">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="DroneRadioDistTexte">
+            <property name="text">
+             <string>Portée radio :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="DroneRadioDist">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="DroneAirSpeedTexte">
+            <property name="text">
+             <string>Vitesse de vol :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="DroneAirSpeed">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="DroneBufferDistTexte">
+            <property name="text">
+             <string>Distance tampon :</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="DroneBufferDist">
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupParamVol">
+       <property name="title">
+        <string>Paramètres de vol</string>
+       </property>
+       <layout class="QFormLayout" name="formLayoutParamVol">
+        <item row="0" column="0" colspan="2">
+         <widget class="QComboBox" name="ChoixMode">
+          <item>
+           <property name="text">
+            <string>Mode point de départ</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Mode zone de départ</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="AltTexte">
+          <property name="text">
+           <string>Altitude de vol relative (en mètres) :</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="AltiVol"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="VitTexte">
+          <property name="text">
+           <string>Vitesse de vol du drone (km/h) :</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="VitVol"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="DensHabTexte">
+          <property name="text">
+           <string>Densité de population acceptée (habitants/km²) :</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QDoubleSpinBox" name="DensPop"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>0</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayoutBoutons">
+       <item>
+        <widget class="QPushButton" name="LancerCalcul">
+         <property name="text">
+          <string>Lancer le calcul</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Stop">
+         <property name="text">
+          <string>Arrêter le plug-in</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

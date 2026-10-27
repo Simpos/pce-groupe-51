@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>flying_areas.source package &#8212; FlyingAreas 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=2bf1fcf8" />
+    
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="flying_areas package" href="flying_areas.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flying_areas.html" title="flying_areas package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">FlyingAreas 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >flying_areas</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="flying_areas.html" accesskey="U">flying_areas package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">flying_areas.source package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="flying-areas-source-package">
+<h1>flying_areas.source package<a class="headerlink" href="#flying-areas-source-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-flying_areas.source.calculZone">
+<span id="flying-areas-source-calculzone-module"></span><h2>flying_areas.source.calculZone module<a class="headerlink" href="#module-flying_areas.source.calculZone" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.calculZone.</span></span><span class="sig-name descname"><span class="pre">ZoneCalculateur</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flying_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">flying_areas.source.zone.Zone</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffering_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">flying_areas.source.zone.Zone</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contingency_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">flying_areas.source.zone.Zone</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restricted_area</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">flying_areas.source.zone.Zone</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ITER_LIMIT</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/calculZone.html#ZoneCalculateur"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.ITER_LIMIT">
+<span class="sig-name descname"><span class="pre">ITER_LIMIT</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">10</span></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.ITER_LIMIT" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.buffering_area">
+<span class="sig-name descname"><span class="pre">buffering_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.buffering_area" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.calculate_areas">
+<span class="sig-name descname"><span class="pre">calculate_areas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/calculZone.html#ZoneCalculateur.calculate_areas"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.calculate_areas" title="Link to this definition">¶</a></dt>
+<dd><p>Calcule les zones de contingence et de buffer autour de la zone de vol.</p>
+<ul class="simple">
+<li><p>contingence : expansion égale à la portée radio du drone
+(hypothèse à valider, voir la réponse)</p></li>
+<li><p>buffer : expansion égale à la distance tampon du drone</p></li>
+</ul>
+<p>Lève ValueError si l’une de ces deux valeurs est absente du fichier du drone.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.contingency_area">
+<span class="sig-name descname"><span class="pre">contingency_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.contingency_area" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.expansion_algorithm">
+<span class="sig-name descname"><span class="pre">expansion_algorithm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/calculZone.html#ZoneCalculateur.expansion_algorithm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.expansion_algorithm" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.flying_area">
+<span class="sig-name descname"><span class="pre">flying_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.flying_area" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.param">
+<span class="sig-name descname"><span class="pre">param</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.0</span></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.param" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.calculZone.ZoneCalculateur.restricted_area">
+<span class="sig-name descname"><span class="pre">restricted_area</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#flying_areas.source.calculZone.ZoneCalculateur.restricted_area" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flying_areas.source.carte">
+<span id="flying-areas-source-carte-module"></span><h2>flying_areas.source.carte module<a class="headerlink" href="#module-flying_areas.source.carte" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.carte.Carte">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.carte.</span></span><span class="sig-name descname"><span class="pre">Carte</span></span><a class="reference internal" href="_modules/flying_areas/source/carte.html#Carte"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.carte.Carte" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-flying_areas.source.drone">
+<span id="flying-areas-source-drone-module"></span><h2>flying_areas.source.drone module<a class="headerlink" href="#module-flying_areas.source.drone" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.drone.</span></span><span class="sig-name descname"><span class="pre">Drone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radio_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">air_speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drone_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Décrit un drone : portée radio, vitesse, type et distance tampon.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.get_air_speed">
+<span class="sig-name descname"><span class="pre">get_air_speed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.get_air_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.get_air_speed" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.get_buffer_dist">
+<span class="sig-name descname"><span class="pre">get_buffer_dist</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.get_buffer_dist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.get_buffer_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.get_drone_type">
+<span class="sig-name descname"><span class="pre">get_drone_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.get_drone_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.get_drone_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.get_name">
+<span class="sig-name descname"><span class="pre">get_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.get_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.get_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.get_radio_dist">
+<span class="sig-name descname"><span class="pre">get_radio_dist</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.get_radio_dist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.get_radio_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.modify_drone">
+<span class="sig-name descname"><span class="pre">modify_drone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radio_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">air_speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drone_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.modify_drone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.modify_drone" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.drone.Drone.nouveau_drone">
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">nouveau_drone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radio_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">air_speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drone_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></span><a class="reference internal" href="_modules/flying_areas/source/drone.html#Drone.nouveau_drone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.drone.Drone.nouveau_drone" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flying_areas.source.file_managing">
+<span id="flying-areas-source-file-managing-module"></span><h2>flying_areas.source.file_managing module<a class="headerlink" href="#module-flying_areas.source.file_managing" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.file_managing.</span></span><span class="sig-name descname"><span class="pre">File_managing</span></span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.delete">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.delete"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.delete" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.modify_air_speed">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">modify_air_speed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">air_speed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.modify_air_speed"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.modify_air_speed" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.modify_buffer_dist">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">modify_buffer_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.modify_buffer_dist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.modify_buffer_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.modify_drone_type">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">modify_drone_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">drone_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.modify_drone_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.modify_drone_type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.modify_radio_dist">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">modify_radio_dist</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">radio_dist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.modify_radio_dist"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.modify_radio_dist" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.read">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">read</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chemin</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.read"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.read" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.file_managing.File_managing.write">
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">drone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.drone.Drone" title="flying_areas.source.drone.Drone"><span class="pre">Drone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/file_managing.html#File_managing.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.file_managing.File_managing.write" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="flying-areas-source-modeexpansion-module">
+<h2>flying_areas.source.modeExpansion module<a class="headerlink" href="#flying-areas-source-modeexpansion-module" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-flying_areas.source.zone">
+<span id="flying-areas-source-zone-module"></span><h2>flying_areas.source.zone module<a class="headerlink" href="#module-flying_areas.source.zone" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.zone.</span></span><span class="sig-name descname"><span class="pre">Zone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">qgis.core.QgsPointXY</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">qgis.PyQt.QtGui.QColor</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default_type'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Zone décrite par une liste de sommets (anneau extérieur).</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.add_point">
+<span class="sig-name descname"><span class="pre">add_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">qgis.core.QgsPointXY</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.add_point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.add_point" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.barycenter">
+<span class="sig-name descname"><span class="pre">barycenter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">qgis.core.QgsPointXY</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.barycenter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.barycenter" title="Link to this definition">¶</a></dt>
+<dd><p>Retourne le barycentre de la liste de points.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.color">
+<span class="sig-name descname"><span class="pre">color</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">qgis.PyQt.QtGui.QColor</span></span><a class="headerlink" href="#flying_areas.source.zone.Zone.color" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.copy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.copy" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.create_zone_from_point">
+<span class="sig-name descname"><span class="pre">create_zone_from_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">center</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">qgis.core.QgsPointXY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_verteces</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.create_zone_from_point"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.create_zone_from_point" title="Link to this definition">¶</a></dt>
+<dd><p>Modifie la zone pour en faire une zone « circulaire » de rayon <cite>radius</cite>,
+centrée sur <cite>center</cite>, avec <cite>n_verteces</cite> sommets.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.expand_self">
+<span class="sig-name descname"><span class="pre">expand_self</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_zone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">expand</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.expand_self"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.expand_self" title="Link to this definition">¶</a></dt>
+<dd><p>Même fonctionnement que expand_zone, mais la zone se modifie elle-même.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.expand_zone">
+<span class="sig-name descname"><span class="pre">expand_zone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expand</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.expand_zone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.expand_zone" title="Link to this definition">¶</a></dt>
+<dd><p>Renvoie une nouvelle zone agrandie : chaque sommet est repoussé
+de <cite>expand</cite> unités le long de la direction barycentre -&gt; sommet.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.geometrie">
+<span class="sig-name descname"><span class="pre">geometrie</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">QgsGeometry</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.geometrie"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.geometrie" title="Link to this definition">¶</a></dt>
+<dd><p>Renvoie le polygone, ou None s’il n’a pas assez de sommets.
+L’anneau est fermé explicitement (premier sommet répété en fin de liste).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.intersect">
+<span class="sig-name descname"><span class="pre">intersect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.intersect"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.intersect" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.is_valid">
+<span class="sig-name descname"><span class="pre">is_valid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.is_valid"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.is_valid" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.normalize">
+<span class="sig-name descname"><span class="pre">normalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">qgis.core.QgsPointXY</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.normalize"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.normalize" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.offset_self">
+<span class="sig-name descname"><span class="pre">offset_self</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_zone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.offset_self"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.offset_self" title="Link to this definition">¶</a></dt>
+<dd><p>Même fonctionnement que offset_zone, mais la zone se modifie elle-même.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.offset_zone">
+<span class="sig-name descname"><span class="pre">offset_zone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></span><a class="reference internal" href="_modules/flying_areas/source/zone.html#Zone.offset_zone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zone.Zone.offset_zone" title="Link to this definition">¶</a></dt>
+<dd><p>Renvoie une nouvelle zone élargie de <cite>distance</cite> vers l’extérieur.
+Utilise le buffer géométrique de QGIS, qui fonctionne pour les formes non convexes.
+<cite>segments</cite> : nombre de segments par quart de cercle dans les angles arrondis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.points">
+<span class="sig-name descname"><span class="pre">points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">qgis.core.QgsPointXY</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#flying_areas.source.zone.Zone.points" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.priority">
+<span class="sig-name descname"><span class="pre">priority</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">-1</span></span><a class="headerlink" href="#flying_areas.source.zone.Zone.priority" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="flying_areas.source.zone.Zone.type">
+<span class="sig-name descname"><span class="pre">type</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'default_type'</span></span><a class="headerlink" href="#flying_areas.source.zone.Zone.type" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flying_areas.source.zoneManager">
+<span id="flying-areas-source-zonemanager-module"></span><h2>flying_areas.source.zoneManager module<a class="headerlink" href="#module-flying_areas.source.zoneManager" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="flying_areas.source.zoneManager.ZoneManager">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">flying_areas.source.zoneManager.</span></span><span class="sig-name descname"><span class="pre">ZoneManager</span></span><a class="reference internal" href="_modules/flying_areas/source/zoneManager.html#ZoneManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zoneManager.ZoneManager" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Gère la couche mémoire des zones. Une zone de priorité supérieure ou égale
+découpe les zones existantes ; une zone de priorité inférieure est découpée par elles.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zoneManager.ZoneManager.ajouter_zone">
+<span class="sig-name descname"><span class="pre">ajouter_zone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">zone</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#flying_areas.source.zone.Zone" title="flying_areas.source.zone.Zone"><span class="pre">Zone</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zoneManager.html#ZoneManager.ajouter_zone"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zoneManager.ZoneManager.ajouter_zone" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zoneManager.ZoneManager.appliquer_style">
+<span class="sig-name descname"><span class="pre">appliquer_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zoneManager.html#ZoneManager.appliquer_style"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zoneManager.ZoneManager.appliquer_style" title="Link to this definition">¶</a></dt>
+<dd><p>Définit des couleurs fixes et transparentes pour chaque type de zone.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zoneManager.ZoneManager.creer_couche">
+<span class="sig-name descname"><span class="pre">creer_couche</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zoneManager.html#ZoneManager.creer_couche"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zoneManager.ZoneManager.creer_couche" title="Link to this definition">¶</a></dt>
+<dd><p>Crée (ou recrée) la couche mémoire en Lambert-93 (EPSG:2154) avec son style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="flying_areas.source.zoneManager.ZoneManager.supprimer_couche">
+<span class="sig-name descname"><span class="pre">supprimer_couche</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/flying_areas/source/zoneManager.html#ZoneManager.supprimer_couche"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#flying_areas.source.zoneManager.ZoneManager.supprimer_couche" title="Link to this definition">¶</a></dt>
+<dd><p>Supprime proprement la couche du projet QGIS.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-flying_areas.source">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-flying_areas.source" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">flying_areas.source package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-flying_areas.source.calculZone">flying_areas.source.calculZone module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur</span></code></a><ul>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.ITER_LIMIT"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.ITER_LIMIT</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.buffering_area"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.buffering_area</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.calculate_areas"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.calculate_areas()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.contingency_area"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.contingency_area</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.expansion_algorithm"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.expansion_algorithm()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.flying_area"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.flying_area</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.param"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.param</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.calculZone.ZoneCalculateur.restricted_area"><code class="docutils literal notranslate"><span class="pre">ZoneCalculateur.restricted_area</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-flying_areas.source.carte">flying_areas.source.carte module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.carte.Carte"><code class="docutils literal notranslate"><span class="pre">Carte</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-flying_areas.source.drone">flying_areas.source.drone module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone"><code class="docutils literal notranslate"><span class="pre">Drone</span></code></a><ul>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.get_air_speed"><code class="docutils literal notranslate"><span class="pre">Drone.get_air_speed()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.get_buffer_dist"><code class="docutils literal notranslate"><span class="pre">Drone.get_buffer_dist()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.get_drone_type"><code class="docutils literal notranslate"><span class="pre">Drone.get_drone_type()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.get_name"><code class="docutils literal notranslate"><span class="pre">Drone.get_name()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.get_radio_dist"><code class="docutils literal notranslate"><span class="pre">Drone.get_radio_dist()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.modify_drone"><code class="docutils literal notranslate"><span class="pre">Drone.modify_drone()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.drone.Drone.nouveau_drone"><code class="docutils literal notranslate"><span class="pre">Drone.nouveau_drone()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-flying_areas.source.file_managing">flying_areas.source.file_managing module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing"><code class="docutils literal notranslate"><span class="pre">File_managing</span></code></a><ul>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.delete"><code class="docutils literal notranslate"><span class="pre">File_managing.delete()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.modify_air_speed"><code class="docutils literal notranslate"><span class="pre">File_managing.modify_air_speed()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.modify_buffer_dist"><code class="docutils literal notranslate"><span class="pre">File_managing.modify_buffer_dist()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.modify_drone_type"><code class="docutils literal notranslate"><span class="pre">File_managing.modify_drone_type()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.modify_radio_dist"><code class="docutils literal notranslate"><span class="pre">File_managing.modify_radio_dist()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.read"><code class="docutils literal notranslate"><span class="pre">File_managing.read()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.file_managing.File_managing.write"><code class="docutils literal notranslate"><span class="pre">File_managing.write()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flying-areas-source-modeexpansion-module">flying_areas.source.modeExpansion module</a></li>
+<li><a class="reference internal" href="#module-flying_areas.source.zone">flying_areas.source.zone module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone"><code class="docutils literal notranslate"><span class="pre">Zone</span></code></a><ul>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.add_point"><code class="docutils literal notranslate"><span class="pre">Zone.add_point()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.barycenter"><code class="docutils literal notranslate"><span class="pre">Zone.barycenter()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.color"><code class="docutils literal notranslate"><span class="pre">Zone.color</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.copy"><code class="docutils literal notranslate"><span class="pre">Zone.copy()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.create_zone_from_point"><code class="docutils literal notranslate"><span class="pre">Zone.create_zone_from_point()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.expand_self"><code class="docutils literal notranslate"><span class="pre">Zone.expand_self()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.expand_zone"><code class="docutils literal notranslate"><span class="pre">Zone.expand_zone()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.geometrie"><code class="docutils literal notranslate"><span class="pre">Zone.geometrie()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.intersect"><code class="docutils literal notranslate"><span class="pre">Zone.intersect()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.is_valid"><code class="docutils literal notranslate"><span class="pre">Zone.is_valid()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.normalize"><code class="docutils literal notranslate"><span class="pre">Zone.normalize()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.offset_self"><code class="docutils literal notranslate"><span class="pre">Zone.offset_self()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.offset_zone"><code class="docutils literal notranslate"><span class="pre">Zone.offset_zone()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.points"><code class="docutils literal notranslate"><span class="pre">Zone.points</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.priority"><code class="docutils literal notranslate"><span class="pre">Zone.priority</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zone.Zone.type"><code class="docutils literal notranslate"><span class="pre">Zone.type</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-flying_areas.source.zoneManager">flying_areas.source.zoneManager module</a><ul>
+<li><a class="reference internal" href="#flying_areas.source.zoneManager.ZoneManager"><code class="docutils literal notranslate"><span class="pre">ZoneManager</span></code></a><ul>
+<li><a class="reference internal" href="#flying_areas.source.zoneManager.ZoneManager.ajouter_zone"><code class="docutils literal notranslate"><span class="pre">ZoneManager.ajouter_zone()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zoneManager.ZoneManager.appliquer_style"><code class="docutils literal notranslate"><span class="pre">ZoneManager.appliquer_style()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zoneManager.ZoneManager.creer_couche"><code class="docutils literal notranslate"><span class="pre">ZoneManager.creer_couche()</span></code></a></li>
+<li><a class="reference internal" href="#flying_areas.source.zoneManager.ZoneManager.supprimer_couche"><code class="docutils literal notranslate"><span class="pre">ZoneManager.supprimer_couche()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-flying_areas.source">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="flying_areas.html"
+                          title="previous chapter">flying_areas package</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/flying_areas.source.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="flying_areas.html" title="flying_areas package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">FlyingAreas 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >flying_areas</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="flying_areas.html" >flying_areas package</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">flying_areas.source package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2013, Groupe 51 IMT Atlantique.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    </div>
+  </body>
+</html>

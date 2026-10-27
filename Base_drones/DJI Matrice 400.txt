@@ -1,0 +1,5 @@
+DJI Matrice 400
+40000
+25
+multirotor
+124

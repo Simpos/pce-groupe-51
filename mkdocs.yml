@@ -1,0 +1,13 @@
+site_name: FlyingAreas
+theme:
+  name: readthedocs
+nav:
+  - Accueil: index.md
+  - Manuel d'utilisation: utilisation.md
+  - Référence du code: api.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
