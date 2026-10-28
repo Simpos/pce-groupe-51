@@ -1,5 +1,5 @@
 [general]
-name=Zones de vol
+name=Zones de vol Claude
 qgisMinimumVersion=3.16
 description=Planification de zones de vol drone (Zone de vol, contingence et tampon)
 version=1.0.0

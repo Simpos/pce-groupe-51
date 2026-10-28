@@ -144,9 +144,17 @@ class ZonesDeVolDockWidget(QDockWidget):
     # UI Construction
     # ------------------------------------------------------------------
     def _build_ui(self):
-        container = QWidget(self)
+        from qgis.PyQt.QtWidgets import QScrollArea
+
+        # 1. Conteneur principal avec barre de défilement (Scroll Area)
+        scroll_area = QScrollArea(self)
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setFrameShape(QFrame.NoFrame)
+
+        container = QWidget()
         main_layout = QVBoxLayout(container)
         main_layout.setSpacing(6)
+        main_layout.setContentsMargins(4, 4, 4, 4)
 
         # 1. Drone Selection Section
         drone_group = QGroupBox("1. Sélection du drone")
@@ -336,7 +344,9 @@ class ZonesDeVolDockWidget(QDockWidget):
         main_layout.addWidget(self.export_btn)
 
         main_layout.addStretch(1)
-        self.setWidget(container)
+
+        scroll_area.setWidget(container)
+        self.setWidget(scroll_area)
 
         self._update_sora_preview()
 
