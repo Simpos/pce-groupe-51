@@ -1,47 +1,15 @@
-# This file contains metadata for your plugin.
-
-# This file should be included when you package your plugin.# Mandatory items:
-
 [general]
 name=Zones de vol
-qgisMinimumVersion=3.0
-description=Ce plugin calcul les zones de vol à partir d'un point ou d'une zone initiale
-version=0.1
-author=Groupe 51 IMT Atlantique
-email=adrien.seminatore@imt-atlantique.net
-
-about=Ce plugin a pour objectif de définir les différentes zones (zone de vol, zone de contingence et zone buffer) d'un drone à partir d'un point de départ ou d'une zone de vol initiale, tout en prenant en compte les zones intérdites, les zones qui demandent une autorisation et le niveau de risque accepté par l'utilisateur (lié à la densité de population). Le plugin prend également en compte une base de données de drones, qui peut-être complétée, afin de ne pas avoir à renseigner plusieurs fois les spécifités d'un même appareil.
-
-tracker=https://gitlab.imt-atlantique.fr/s25roux/pce-gp51/-/merge_requests
-repository=https://gitlab.imt-atlantique.fr/s25roux/pce-gp51/-/merge_requests
-# End of mandatory metadata
-
-# Recommended items:
-
+qgisMinimumVersion=3.16
+description=Planification de zones de vol drone (Zone de vol, contingence et tampon)
+version=1.0.0
+author=Drone GIS Planner
+email=contact@example.com
+about=Extension QGIS permettant de planifier des zones de vol de drones à partir d'un point ou d'un polygone et de générer les couches temporaires associées (Zone de vol, Zone de contingence, Zone tampon).
+tracker=https://example.com
+repository=https://example.com
 hasProcessingProvider=no
-# Uncomment the following line and add your changelog:
-# changelog=
-
-# Tags are comma separated with spaces allowed
-tags=python
-
-homepage=
-category=Plugins
+category=Vector
 icon=icon.png
-# experimental flag
-experimental=True
-
-# deprecated flag (applies to the whole plugin, not just a single version)
+experimental=False
 deprecated=False
-
-# Since QGIS 3.8, a comma separated list of plugins to be installed
-# (or upgraded) can be specified.
-# Check the documentation for more information.
-# plugin_dependencies=
-
-Category of the plugin: Raster, Vector, Database or Web
-# category=
-
-# If the plugin can run on QGIS Server.
-server=False
-

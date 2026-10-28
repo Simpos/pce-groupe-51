@@ -1,0 +1,6 @@
+nom=DJI Mavic 3 Enterprise
+rayon_vol=60
+contingence=25
+tampon=45
+vitesse=15
+altitude=120

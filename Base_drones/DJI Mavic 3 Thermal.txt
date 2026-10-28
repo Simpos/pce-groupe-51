@@ -1,5 +1,0 @@
-DJI Mavic 3 Thermal
-15000
-21
-multirotor
-104

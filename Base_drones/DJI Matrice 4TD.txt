@@ -1,5 +1,0 @@
-DJI Matrice 4TD
-30000
-21
-multirotor
-104
